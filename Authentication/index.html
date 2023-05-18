@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://www.gstatic.com/firebasejs/7.17.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.17.2/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.17.2/firebase-auth.js"></script>
+    <script>
+        // Your web app's Firebase configuration
+        var firebaseConfig = {
+            apiKey: "AIzaSyCO8vHxt0gWxviyFZ2BArqk-ihoakaGOLs",
+            authDomain: "ar-memon.firebaseapp.com",
+            databaseURL: "https://ar-memon.firebaseio.com",
+            projectId: "ar-memon",
+            storageBucket: "ar-memon.appspot.com",
+            messagingSenderId: "376773292064",
+            appId: "1:376773292064:web:cf0de92140ff05775d4c45",
+            measurementId: "G-WVY7YJLB4L"
+        };
+
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+    </script>
+</head>
+
+<body>
+    <div>
+        <input type="text" placeholder="email" name="" id="email"> <br>
+        <input type="password" placeholder="password" name="" id="password">
+        <button onclick="signup()">Save</button>
+    </div>
+    <br>
+    <br>
+    <p>Login</p>
+    <div>
+        <input type="text" placeholder="email" name="" id="email-login"> <br>
+        <input type="password" placeholder="password" name="" id="password-login">
+        <button onclick="login()">Save</button>
+    </div>
+    </br>
+    </br>
+    <div><button onclick="facebook()">facebook login</button></div>
+    <script src=app.js></script>
+</body>
+
+</html>
